@@ -1,0 +1,11 @@
+Shirish Ramchandran
+13220
+
+
+1. First to install the debian images run the following commands:
+
+	sh master_install_script.sh /path/to/debian/iso /path/to/preseed/iso_1 /path/to/preseed/iso_2 /path/to/HDD/image /size/of/HDD/image/in/GBs
+
+2. After the installation, run Qemu
+
+	sh run_with_kvm.sh /path/to/HDD/image

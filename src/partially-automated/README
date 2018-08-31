@@ -1,0 +1,20 @@
+Shirish Ramchandran
+13220
+
+
+1. First to install the first debian image run the following commands:
+	
+	sh master_install_script.sh /path/to/debian/iso /path/to/preseed/iso_1 /path/to/preseed/iso_2 /path/to/HDD/image /size/of/HDD/image/in/GBs
+
+2. When the Qemu has successfully booted the installed system, login and run the following commands:
+	
+	fdisk /dev/sda
+	
+In the fdisk command prompt:	
+	d
+	6
+	w
+
+4. After the installations, run Qemu:
+
+	sh run_with_kvm.sh /path/to/HDD/image
